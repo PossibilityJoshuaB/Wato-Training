@@ -57,7 +57,8 @@ ROBOT_IMAGE=${ROBOT_IMAGE:-"$REGISTRY_URL/robot"}
 ## --------------------------- Ports ------------------------------
 
 BASE_PORT=${BASE_PORT:-$(($(id -u)*20))}
-FOXGLOVE_BRIDGE_PORT=${FOXGLOVE_BRIDGE_PORT:-$((BASE_PORT++))}
+#FOXGLOVE_BRIDGE_PORT=${FOXGLOVE_BRIDGE_PORT:-$((BASE_PORT++))}
+FOXGLOVE_BRIDGE_PORT=3
 GAZEBO_PORT=${GAZEBO_PORT:-$((BASE_PORT++))}
 
 ## -------------------- Environment Variables -------------------------
